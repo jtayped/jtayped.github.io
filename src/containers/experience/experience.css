@@ -1,0 +1,18 @@
+.experience {
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-main h2 {
+    margin-bottom: 2rem;
+    font-size: 3.5em;
+}

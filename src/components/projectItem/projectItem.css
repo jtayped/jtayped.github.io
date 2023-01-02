@@ -1,0 +1,12 @@
+.project-item {
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.project-item {
+    color: white;
+}

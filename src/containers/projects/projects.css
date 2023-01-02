@@ -1,0 +1,19 @@
+.projects {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.project-section {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    gap: 1rem;
+}
+
+.projects h2 {
+    font-size: 3.5em;
+    margin-bottom: 2rem;
+}
