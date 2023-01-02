@@ -7,10 +7,10 @@ const ProjectItem = (props) => {
       key={props.index}
       className="project-item"
       style={{
-        backgroundImage: `url(${props.img})`,
+        background: `url(${props.img}) center/cover`,
+
         backgroundPosition: "center",
         backgroundSize: "cover",
-        filter: "brightness(60%)",
       }}
       viewport={{ once: true }}
       initial={{ y: 200, opacity: 0 }}
@@ -21,9 +21,7 @@ const ProjectItem = (props) => {
           delay: props.index * 0.2,
         },
       }}
-    >
-      <h3>{props.title}</h3>
-    </motion.div>
+    ></motion.div>
   );
 };
 

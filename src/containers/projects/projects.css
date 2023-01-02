@@ -16,6 +16,7 @@
 .projects h2 {
     font-size: 3.5em;
     margin-bottom: 2rem;
+    padding: 0 2rem;
 }
 
 @media all and (max-width: 480px) {

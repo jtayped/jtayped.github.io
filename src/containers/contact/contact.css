@@ -3,10 +3,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: var(--main-color);
 }
 
 .contact-main {
+    width: 35vw;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -65,8 +67,7 @@ form button:active {
 }
 
 @media screen and (max-width: 480px) {
-    .contact {
+    .contact-main {
         width: 75vw;
-        margin-right: 0;
     }
 }
