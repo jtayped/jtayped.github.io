@@ -1,6 +1,6 @@
 import './App.css';
 
-import {Hero, Navbar, About, Experience, Projects, Contact } from './containers/index'
+import {Hero, Navbar, About, Experience, Projects, Contact, Footer } from './containers/index'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
-      <div style={{ margin: 10000 }}></div>
+      <Footer />
     </div>
   );
 }

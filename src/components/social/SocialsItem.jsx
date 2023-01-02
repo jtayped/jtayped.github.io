@@ -16,7 +16,7 @@ const SocialsItem = (props) => {
       }}
       className="socials-item"
     >
-      <a href={props.socialsLink} target="_blank">
+      <a href={props.socialsLink} target="_blank" rel="noreferrer noopener">
         <img src={props.img} alt={props.socialsID} />
       </a>
     </motion.div>
