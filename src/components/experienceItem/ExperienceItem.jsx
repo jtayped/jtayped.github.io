@@ -10,9 +10,6 @@ const ExperienceItem = (props) => {
       whileInView={{
         y: 0,
         opacity: 1,
-        transition: {
-          delay: props.index * 0.2,
-        },
       }}
     >
       <h3>{props.title}</h3>
