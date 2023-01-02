@@ -75,3 +75,12 @@
 .navbar-on-scroll-main {
     height: 10vh;
 }
+
+@media all and (max-width: 480px) {
+    .navbar-main {
+        padding: 1rem 2rem;
+    }
+    .logo {
+        font-size: 4rem;
+    }
+}

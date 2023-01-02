@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const ProjectItem = (props) => {
   return (
     <motion.div
+      key={props.index}
       className="project-item"
       style={{
         backgroundImage: `url(${props.img})`,

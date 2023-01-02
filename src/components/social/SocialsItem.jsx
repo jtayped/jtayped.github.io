@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const SocialsItem = (props) => {
   return (
     <motion.div
+      key={props.index}
       viewport={{ once: true }}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}

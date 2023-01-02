@@ -5,11 +5,11 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--main-font);
-    background-color: var(--main-color);
-    color: var(--accent-color);
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  color: var(--accent-color);
 }

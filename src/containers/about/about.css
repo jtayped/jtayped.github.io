@@ -35,3 +35,14 @@
 .socials div {
     margin-right: 0.5rem;
 }
+
+@media all and (max-width: 480px) {
+    .about-right {
+        display: none;
+    }
+
+    .about-left {
+        width: 85vw;
+        font-size: 1rem;
+    }
+}

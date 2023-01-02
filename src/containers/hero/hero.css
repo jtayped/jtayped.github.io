@@ -10,10 +10,11 @@
   margin-top: 17.5vh;
   text-align: center;
   z-index: 0;
+  padding: 2rem;
 }
 
 .hero-main h1 {
-  font-size: 10em;
+  font-size: 10rem;
 }
 
 .hero-main h2 {
@@ -30,4 +31,19 @@
   color: var(--main-color);
   margin-top: 1.5rem;
   font-family: var(--roboto);
+}
+
+@media all and (max-width: 480px) {
+  .hero-main h1 {
+    font-size: 3.25rem;
+  }
+
+  .hero-main h2 {
+    font-size: 0.75rem;
+  }
+
+  .hero-main button {
+    padding: 0.5rem 2.5rem;
+    font-size: 1.25rem;
+  }
 }

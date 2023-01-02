@@ -2,13 +2,11 @@
     margin-top: 15vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     background-color: var(--main-color);
 }
 
 .contact-main {
-    width: 35vw;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -64,4 +62,11 @@ form button:hover {
 form button:active {
     transform: translateY(-2.5%);
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        width: 75vw;
+        margin-right: 0;
+    }
 }
