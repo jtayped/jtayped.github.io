@@ -3,18 +3,18 @@ import Wave from "react-wavify";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-    window.addEventListener("scroll", function () {
-      const header = document.querySelector(".navbar-main");
-      const logo = this.document.querySelector(".logo");
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".navbar-main");
+    const logo = this.document.querySelector(".logo");
 
-      if (window.pageYOffset > 0) {
-        header.classList.add("navbar-on-scroll-main");
-        logo.classList.add("logo-on-scroll");
-      } else {
-        header.classList.remove("navbar-on-scroll-main");
-        logo.classList.remove("logo-on-scroll");
-      }
-    });
+    if (window.pageYOffset > 0) {
+      header.classList.add("navbar-on-scroll-main");
+      logo.classList.add("logo-on-scroll");
+    } else {
+      header.classList.remove("navbar-on-scroll-main");
+      logo.classList.remove("logo-on-scroll");
+    }
+  });
   return (
     <div className="navbar">
       <div className="navbar-main">
@@ -51,32 +51,30 @@ const Navbar = () => {
             <li>
               <a href="#projects">Projects</a>
             </li>
-            <li>
-              <a href="#contact">
-                <motion.button
-                  initial={{
-                    y: -100,
-                    boxShadow: "0 10px 10px rgba(0, 0, 0, 0)",
-                  }}
-                  animate={{
-                    y: 0,
-                    boxShadow: "0 10px 10px rgba(0, 0, 0, 0)",
-                  }}
-                  whileHover={{
-                    y: -3,
-                    boxShadow: "0 15px 10px rgba(0, 0, 0, 0.1)",
-                    transition: {
-                      delay: 0,
-                    }
-                  }}
-                  transition={{
-                    delay: 1.5,
-                  }}
-                >
-                  Contact
-                </motion.button>
-              </a>
-            </li>
+            <a href="#contact">
+              <motion.button
+                initial={{
+                  y: -100,
+                  boxShadow: "0 10px 10px rgba(0, 0, 0, 0)",
+                }}
+                animate={{
+                  y: 0,
+                  boxShadow: "0 10px 10px rgba(0, 0, 0, 0)",
+                }}
+                whileHover={{
+                  y: -3,
+                  boxShadow: "0 15px 10px rgba(0, 0, 0, 0.1)",
+                  transition: {
+                    delay: 0,
+                  },
+                }}
+                transition={{
+                  delay: 1.5,
+                }}
+              >
+                Contact
+              </motion.button>
+            </a>
           </ul>
         </div>
       </div>
