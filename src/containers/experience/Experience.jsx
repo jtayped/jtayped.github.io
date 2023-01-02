@@ -27,12 +27,17 @@ const Experience = () => {
     {
       title: "Debian Linux",
       description:
-        "I have a lot of experience automating tasks and processes using Debian Linux. I am proficient in using tools and techniques to automate tasks such as system updates, backups, and server maintenance.",
+        "I am highly proficient in using Debian Linux, with strong skills in configuring, managing, and troubleshooting systems running the operating system. I have a solid understanding of how to secure and optimize Debian for various purposes, and I am able to customize and automate tasks using scripts and programming languages.",
     },
     {
-      title: "General PC knowledge",
+      title: "General PC Knowledge",
       description:
         "I am skilled at repairing, maintaining, and troubleshooting computers and have a strong understanding of their hardware and software. I am always expanding my knowledge in this area because of my interest in computers. I am confident in my ability to work with computers and am eager to continue learning more about them.",
+    },
+    {
+      title: "Networking",
+      description:
+        "One of my favorite hobbies is designing and tinkering with my home network. I find it satisfying to optimize my home connectivity and create a seamless experience for all my devices. I find the process of connecting devices and facilitating communication between them to be both challenging and rewarding.",
     },
   ];
   return (

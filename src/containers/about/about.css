@@ -5,11 +5,12 @@
 }
 
 .about-right {
-  background-image: url("../../assets/about.jpg");
-  width: 25rem;
-  height: 34rem;
-  background-size: cover;
-  background-position: center;
+  align-self: flex-start;
+  width: 17.5rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-left {

@@ -1,6 +1,7 @@
 import "./about.css";
 import socials from './socials'
 
+import AboutImage from "../../assets/about.png"
 import { motion } from "framer-motion";
 import { SocialsItem } from "../../components/index";
 
@@ -31,7 +32,7 @@ const About = () => {
             student studying Batxillerat at La Salle Mollerussa, I've managed to
             gather a ton of knowledge about computers and all things tech. I'm a
             pro at computer repair and building, and I can program with the best
-            of them. I've even got server maintenance down pat. Basically, if
+            of them, I've even got server maintenance down pat. Basically, if
             it's related to computers, I'm your guy. Just call me the tech
             magician, because I can make computers do just about anything with a
             wave of my magical keyboard.
@@ -50,11 +51,13 @@ const About = () => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0, border: "0 solid #00628b" }}
-          whileInView={{ opacity: 1, border: "1.5rem solid #00628b" }}
+          whileInView={{ opacity: 1, border: "2rem solid #00628b" }}
           transition={{ delay: 0.8, type: "spring", stiffness: 150 }}
           viewport={{ once: true }}
           className="about-right"
-        />
+        >
+          <img src={AboutImage} alt="This is me!" />
+        </motion.div>
       </div>
     </div>
   );
