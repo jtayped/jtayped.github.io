@@ -1,36 +1,16 @@
-import {
-  Whatsapp,
-  Instagram,
-  Facebook,
-  Twitter,
-  Youtube,
-} from "../../assets/icons/socials/index";
-
 const socials = [
   {
     socialsID: "Whatsapp",
-    socialsLink: "https://wa.me/34640336946",
-    img: Whatsapp,
+    socialsLink:
+      "https://api.whatsapp.com/send/?phone=34640336946&text&type=phone_number&app_absent=0",
   },
   {
     socialsID: "Instagram",
-    socialsLink: "https://instagram.com/jtayped",
-    img: Instagram,
+    socialsLink: "https://instagram.com/jtayped_",
   },
   {
-    socialsID: "Facebook",
-    socialsLink: "https://facebook.com/jtayped",
-    img: Facebook,
-  },
-  {
-    socialsID: "Twitter",
-    socialsLink: "https://twitter.com/jtayped",
-    img: Twitter,
-  },
-  {
-    socialsID: "Youtube",
-    socialsLink: "https://youtube.com/jtayped",
-    img: Youtube,
+    socialsID: "Github",
+    socialsLink: "https://github.com/jtayped",
   },
 ];
 

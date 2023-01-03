@@ -12,6 +12,7 @@ const ExperienceItem = (props) => {
         y: 0,
         opacity: 1,
       }}
+      whileHover={{ scale: 1.025}}
     >
       <h3>{props.title}</h3>
       <p>{props.description}</p>

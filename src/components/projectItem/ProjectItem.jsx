@@ -21,7 +21,7 @@ const ProjectItem = (props) => {
           delay: props.index * 0.2,
         },
       }}
-    ></motion.div>
+    />
   );
 };
 

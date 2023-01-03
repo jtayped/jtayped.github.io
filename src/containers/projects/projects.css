@@ -8,8 +8,7 @@
 }
 
 .project-section {
-    display: grid;
-    grid-template-columns: repeat(3, 25vw);
+    display: flex;
     gap: 1rem;
 }
 

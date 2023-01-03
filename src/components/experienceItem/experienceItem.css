@@ -29,7 +29,13 @@
   align-items: flex-end;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 900px) {
+  .experience-item {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media all and (max-width: 550px) {
   .experience-item {
     display: grid;
     grid-template-columns: 1fr;

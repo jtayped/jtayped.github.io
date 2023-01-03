@@ -1,5 +1,5 @@
 .contact {
-    margin-top: 15vh;
+    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,6 @@
 }
 
 .contact-main {
-    width: 35vw;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -68,6 +67,7 @@ form button:active {
 
 @media screen and (max-width: 480px) {
     .contact-main {
-        width: 75vw;
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
     }
 }

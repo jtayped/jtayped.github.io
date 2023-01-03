@@ -1,5 +1,6 @@
 import "./socialsItem.css";
 import { motion } from "framer-motion";
+import { SocialIcon } from "react-social-icons";
 
 const SocialsItem = (props) => {
   return (
@@ -17,9 +18,7 @@ const SocialsItem = (props) => {
       }}
       className="socials-item"
     >
-      <a href={props.socialsLink} target="_blank" rel="noreferrer noopener">
-        <img src={props.img} alt={props.socialsID} />
-      </a>
+      <SocialIcon url={props.socialsLink} bgColor="white"/>
     </motion.div>
   );
 };

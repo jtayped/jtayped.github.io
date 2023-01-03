@@ -64,7 +64,7 @@
   rotate: 180deg;
   position: relative;
   top: -10px;
-  filter: drop-shadow(0px -20px 10px rgb(0 0 0 / 0.15));
+  filter: drop-shadow(0px -50px 27px rgb(0 0 0 / 0.15));
 }
 
 .logo-on-scroll {
@@ -75,16 +75,19 @@
   height: 10vh;
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 650px) {
   .logo {
     font-size: 4rem;
   }
   .navbar-right ul li {
     display: none;
   }
+  .navbar-main {
+    align-items: center;
+  }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 850px) {
   .navbar-main {
     padding: 1rem 2rem;
   }
