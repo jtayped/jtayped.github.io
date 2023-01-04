@@ -5,13 +5,6 @@ const ProjectItem = (props) => {
   return (
     <motion.div
       key={props.index}
-      className="project-item"
-      style={{
-        background: `url(${props.img}) center/cover`,
-
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
       viewport={{ once: true }}
       initial={{ y: 200, opacity: 0 }}
       whileInView={{
@@ -21,7 +14,21 @@ const ProjectItem = (props) => {
           delay: props.index * 0.2,
         },
       }}
-    />
+    >
+      <motion.div
+        className="project-item"
+        whileHover={{
+          y: -5,
+          scale: 1.03,
+        }}
+        style={{
+          background: `url(${props.img}) center/cover`,
+
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      ></motion.div>
+    </motion.div>
   );
 };
 

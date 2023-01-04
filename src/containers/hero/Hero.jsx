@@ -21,26 +21,29 @@ const Hero = () => {
           I'll make your website so user-friendly, even your grandma could
           navigate it
         </motion.h2>
-        <a href="#contact">
+        <motion.a
+          href="#contact"
+          initial={{ boxShadow: "0px 0px 10px rgba(0, 0, 0, 0)", opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: {
+              delay: 1.25,
+            },
+          }}
+        >
           <motion.button
-            initial={{ boxShadow: "0px 0px 10px rgba(0, 0, 0, 0)", opacity: 0 }}
-            animate={{ opacity: 1 }}
             whileHover={{
               borderRadius: 15,
               boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.4)",
               scale: 1.05,
               transition: {
-                delay: 0,
-                duration: 0.25,
-              },
-            }}
-            transition={{
-              delay: 1.25,
+                duration: 0.25
+              }
             }}
           >
             Contact
           </motion.button>
-        </a>
+        </motion.a>
       </header>
     </div>
   );

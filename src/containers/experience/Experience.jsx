@@ -41,7 +41,7 @@ const Experience = () => {
     },
   ];
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <div className="experience-main">
         <motion.h2 initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{once: true}}>These are some of the things I know</motion.h2 >
         <div className="experiences">

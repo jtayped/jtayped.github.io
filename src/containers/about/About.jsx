@@ -7,7 +7,7 @@ import { SocialsItem } from "../../components/index";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-main">
         <motion.div
           viewport={{ once: true }}
