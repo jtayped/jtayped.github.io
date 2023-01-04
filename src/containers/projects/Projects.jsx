@@ -3,6 +3,7 @@ import "./projects.css";
 import {
   Mito,
   Notes,
+  Todo,
 } from "../../assets/projects/index";
 
 import {ProjectItem} from '../../components/index'
@@ -16,6 +17,10 @@ const Projects = () => {
     {
       title: "Notes",
       img: Notes,
+    },
+    {
+      title: "Todo",
+      img: Todo,
     },
   ];
   return (
