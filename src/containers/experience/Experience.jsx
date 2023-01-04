@@ -40,10 +40,27 @@ const Experience = () => {
         "One of my favorite hobbies is designing and tinkering with my home network. I find it satisfying to optimize my home connectivity and create a seamless experience for all my devices. I find the process of connecting devices and facilitating communication between them to be both challenging and rewarding.",
     },
   ];
+
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "ItemList",
+    itemListElement: experiences.map((experience, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: experience.title,
+      description: experience.description,
+    })),
+  };
   return (
     <div className="experience" id="experience">
       <div className="experience-main">
-        <motion.h2 initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{once: true}}>These are some of the things I know</motion.h2 >
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          These are some of the things I know
+        </motion.h2>
         <div className="experiences">
           {experiences.map((experience, index) => (
             <ExperienceItem
@@ -53,6 +70,9 @@ const Experience = () => {
             />
           ))}
         </div>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </div>
     </div>
   );

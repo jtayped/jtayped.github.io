@@ -1,11 +1,26 @@
 import "./about.css";
-import socials from './socials'
+import socials from "./socials";
 
-import AboutImage from "../../assets/about.png"
+import AboutImage from "../../assets/about.png";
 import { motion } from "framer-motion";
 import { SocialsItem } from "../../components/index";
 
 const About = () => {
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "AboutPage",
+    name: "About Joel Taylor",
+    description:
+      "Learn more about Joel Taylor, a skilled computer technician and programmer.",
+    image: AboutImage,
+    mainEntity: {
+      "@type": "Person",
+      name: "Joel Taylor",
+      description:
+        "Joel Taylor is a 16-year-old student studying Batxillerat at La Salle Mollerussa. He is skilled in computer repair and building, programming, and server maintenance.",
+      sameAs: socials.map((social) => social.socialsLink),
+    },
+  };
   return (
     <div className="about" id="about">
       <div className="about-main">
@@ -58,6 +73,9 @@ const About = () => {
         >
           <img src={AboutImage} alt="This is me!" />
         </motion.div>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </div>
     </div>
   );
