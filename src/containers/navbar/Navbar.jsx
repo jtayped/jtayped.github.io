@@ -15,7 +15,7 @@ const Navbar = () => {
       logo.classList.remove("logo-on-scroll");
     }
   });
-  
+
   return (
     <div className="navbar">
       <div className="navbar-main">
@@ -52,7 +52,12 @@ const Navbar = () => {
             <li>
               <a href="#projects">Projects</a>
             </li>
-            <motion.a href="#contact">
+            <motion.a
+              href="#contact"
+              initial={{ y: -200 }}
+              animate={{ y: 0 }}
+              transition={{ delay: 1.8 }}
+            >
               <motion.button
                 whileHover={{
                   y: -3,
