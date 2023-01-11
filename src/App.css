@@ -13,3 +13,7 @@ body {
   background-color: var(--main-color);
   color: var(--accent-color);
 }
+
+li {
+  list-style: none;
+}

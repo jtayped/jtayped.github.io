@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 
 const SocialsItem = (props) => {
   return (
-    <motion.div
+    <motion.li
       key={props.index}
       viewport={{ once: true }}
       initial={{ opacity: 0, y: 50 }}
@@ -18,8 +18,8 @@ const SocialsItem = (props) => {
       }}
       className="socials-item"
     >
-      <SocialIcon url={props.socialsLink} bgColor="white"/>
-    </motion.div>
+      <SocialIcon url={props.socialsLink} bgColor="white" />
+    </motion.li>
   );
 };
 

@@ -34,7 +34,7 @@ const Contact = () => {
       whileInView={{ opacity: 1, x: 0 }}
     >
       <form className="contact-main" ref={form} onSubmit={sendEmail}>
-        <h2>Contact Me</h2>
+        <h3>Contact Me</h3>
         <input
           type="text"
           className="name"

@@ -42,18 +42,18 @@ const About = () => {
           className="about-left"
         >
           <h3>Hi there!</h3>
-          <p>
-            Hey there, Joel Taylor the computer wizard here! As a 16-year-old
-            student studying Batxillerat at La Salle Mollerussa, I've managed to
-            gather a ton of knowledge about computers and all things tech. I'm a
-            pro at computer repair and building, and I can program with the best
-            of them, I've even got server maintenance down pat. Basically, if
-            it's related to computers, I'm your guy. Just call me the tech
-            magician, because I can make computers do just about anything with a
-            wave of my magical keyboard.
-          </p>
+          <article>
+            Joel Taylor the computer wizard here! As a 16-year-old student
+            studying Batxillerat at La Salle Mollerussa, I've managed to gather
+            a ton of knowledge about computers and all things tech. I'm a pro at
+            computer repair and building, and I can program with the best of
+            them, I've even got server maintenance down pat. Basically, if it's
+            related to computers, I'm your guy. Just call me the tech magician,
+            because I can make computers do just about anything with a wave of
+            my magical keyboard.
+          </article>
 
-          <div className="socials">
+          <ul className="socials">
             {socials.map((social, index) => (
               <SocialsItem
                 index={index}
@@ -62,7 +62,7 @@ const About = () => {
                 img={social.img}
               />
             ))}
-          </div>
+          </ul>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, border: "0 solid #00628b" }}

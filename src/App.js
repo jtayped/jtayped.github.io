@@ -1,6 +1,14 @@
-import './App.css';
+import "./App.css";
 
-import {Hero, Navbar, About, Experience, Projects, Contact, Footer } from './containers/index'
+import {
+  Hero,
+  Navbar,
+  About,
+  Experience,
+  Projects,
+  Contact,
+  Footer,
+} from "./containers/index";
 
 function App() {
   return (

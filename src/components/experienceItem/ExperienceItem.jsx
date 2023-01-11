@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ExperienceItem = (props) => {
   return (
-    <motion.div
+    <motion.li
       key={props.index}
       className="experience-item"
       viewport={{ once: true }}
@@ -14,9 +14,9 @@ const ExperienceItem = (props) => {
       }}
       whileHover={{ scale: 1.025}}
     >
-      <h3>{props.title}</h3>
+      <h4>{props.title}</h4>
       <p>{props.description}</p>
-    </motion.div>
+    </motion.li>
   );
 };
 

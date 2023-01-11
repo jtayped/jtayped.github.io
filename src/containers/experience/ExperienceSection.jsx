@@ -54,14 +54,14 @@ const Experience = () => {
   return (
     <div className="experience" id="experience">
       <div className="experience-main">
-        <motion.h2
+        <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
           These are some of the things I know
-        </motion.h2>
-        <div className="experiences">
+        </motion.h3>
+        <ul className="experiences">
           {experiences.map((experience, index) => (
             <ExperienceItem
               index={index}
@@ -69,7 +69,7 @@ const Experience = () => {
               description={experience.description}
             />
           ))}
-        </div>
+        </ul>
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

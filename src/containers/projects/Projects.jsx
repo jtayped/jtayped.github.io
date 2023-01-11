@@ -1,22 +1,15 @@
 import "./projects.css";
 
-import { Mito, Notes, Todo } from "../../assets/projects/index";
+import { Pomodoro } from "../../assets/projects/index";
 
 import { ProjectItem } from "../../components/index";
 
 const Projects = () => {
   const projectItems = [
     {
-      title: "Mito",
-      img: Mito,
-    },
-    {
-      title: "Notes",
-      img: Notes,
-    },
-    {
-      title: "Todo",
-      img: Todo,
+      title: "Pomodoro",
+      img: Pomodoro,
+      link: "https://jtayped.github.io/pomodoro-timer/",
     },
   ];
 
@@ -35,12 +28,12 @@ const Projects = () => {
 
   return (
     <div className="projects" id="projects">
-      <h2>Here are some of the projects I have done</h2>
-      <div className="project-section">
+      <h3>Here are some of the projects I have done</h3>
+      <ul className="project-section">
         {projectItems.map((project, index) => (
-          <ProjectItem index={index} title={project.title} img={project.img} />
+          <ProjectItem index={index} title={project.title} img={project.img} link={project.link} />
         ))}
-      </div>
+      </ul>
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>

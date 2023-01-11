@@ -5,7 +5,7 @@ import { SocialsItem } from "../../components/index";
 const Footer = () => {
   return (
     <div className="footer">
-      <h3>Joel Taylor</h3>
+      <h4>Joel Taylor</h4>
       <div className="socials">
         {socials.map((social, index) => (
           <SocialsItem
