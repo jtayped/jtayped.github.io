@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const ProjectItem = (props) => {
   return (
     <motion.li
-      key={props.index}
+      className="project-item"
       viewport={{ once: true }}
       initial={{ y: 200, opacity: 0 }}
       whileInView={{
@@ -20,20 +20,20 @@ const ProjectItem = (props) => {
         target="_blank"
         rel="noopener noreferrer"
         className="project-item"
-        whileHover={{
-          y: -5,
-          scale: 1.03,
+        style={{
+          background: `url(${props.img}) center/cover`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
-      >
-        <button
-          className="project-item"
-          style={{
-            background: `url(${props.img}) center/cover`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
-        ></button>
-      </motion.a>
+      ></motion.a>
+      <article className="details">
+        <h4>{props.title}</h4>
+        <p>{props.description}</p>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          <button>Visit</button>
+        </a>
+      </article>
     </motion.li>
   );
 };

@@ -7,9 +7,9 @@ const Footer = () => {
     <div className="footer">
       <h4>Joel Taylor</h4>
       <div className="socials">
-        {socials.map((social, index) => (
+        {socials.map((social) => (
           <SocialsItem
-            index={index}
+            key={social.id}
             socialsID={social.socialsID}
             socialsLink={social.socialsLink}
             img={social.img}

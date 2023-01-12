@@ -24,7 +24,7 @@ const About = () => {
   return (
     <div className="about" id="about">
       <div className="about-main">
-        <motion.div
+        <motion.article
           viewport={{ once: true }}
           initial={{
             opacity: 0,
@@ -42,7 +42,7 @@ const About = () => {
           className="about-left"
         >
           <h3>Hi there!</h3>
-          <article>
+          <p>
             Joel Taylor the computer wizard here! As a 16-year-old student
             studying Batxillerat at La Salle Mollerussa, I've managed to gather
             a ton of knowledge about computers and all things tech. I'm a pro at
@@ -51,19 +51,19 @@ const About = () => {
             related to computers, I'm your guy. Just call me the tech magician,
             because I can make computers do just about anything with a wave of
             my magical keyboard.
-          </article>
+          </p>
 
           <ul className="socials">
-            {socials.map((social, index) => (
+            {socials.map((social) => (
               <SocialsItem
-                index={index}
+                key={social.id}
                 socialsID={social.socialsID}
                 socialsLink={social.socialsLink}
                 img={social.img}
               />
             ))}
           </ul>
-        </motion.div>
+        </motion.article>
         <motion.div
           initial={{ opacity: 0, border: "0 solid #00628b" }}
           whileInView={{ opacity: 1, border: "2rem solid #00628b" }}
