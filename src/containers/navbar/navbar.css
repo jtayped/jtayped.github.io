@@ -32,13 +32,18 @@
   color: var(--main-color);
 }
 
+.navbar-right {
+  align-self: center;
+}
+
 .navbar-right ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.navbar-right ul li, .navbar-right ul button {
+.navbar-right ul li,
+.navbar-right ul button {
   margin-left: 3rem;
   list-style: none;
   font-size: 1.35em;

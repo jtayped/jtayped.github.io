@@ -18,7 +18,12 @@ const SocialsItem = (props) => {
       }}
       className="socials-item"
     >
-      <SocialIcon url={props.socialsLink} bgColor="white" />
+      <SocialIcon
+        url={props.socialsLink}
+        bgColor="white"
+        target="_blank"
+        rel="noopener noreferrer"
+      />
     </motion.li>
   );
 };
