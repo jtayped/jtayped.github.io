@@ -12,10 +12,16 @@ const ExperienceItem = (props) => {
         y: 0,
         opacity: 1,
       }}
-      whileHover={{ scale: 1.025}}
     >
       <h4>{props.title}</h4>
-      <p>{props.description}</p>
+      <motion.p
+        initial={{ paddingLeft: 50 }}
+        whileInView={{ paddingLeft: 16 }}
+        transition={{ delay: 0.1 }}
+        viewport={{ once: true }}
+      >
+        {props.description}
+      </motion.p>
     </motion.li>
   );
 };

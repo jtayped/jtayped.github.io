@@ -9,10 +9,10 @@
 
 .experience-item p {
   border-left: 5px solid var(--filler-color);
-  padding-left: 1rem;
   font-size: 1em;
   color: var(--filler-color);
   font-family: var(--filler-font);
+  background-color: var(--main-color);
 }
 
 .experience-item h4 {
