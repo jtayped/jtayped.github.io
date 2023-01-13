@@ -37,8 +37,10 @@ const Navbar = () => {
             }}
             className="logo"
           >
-            <p className="logo-J">J</p>
-            <p className="logo-T">T</p>
+            <a href="https://jtayped.github.io/" rel="noopener noreferrer">
+              <p className="logo-J">J</p>
+              <p className="logo-T">T</p>
+            </a>
           </motion.div>
         </div>
         <div className="navbar-right">

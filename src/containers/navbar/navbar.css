@@ -19,13 +19,15 @@
   align-items: center;
 }
 
-.logo {
-  font-size: 7.5em;
+.logo a {
+  font-size: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
   transition: 0.4s;
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .logo-J {
@@ -72,7 +74,7 @@
 }
 
 .logo-on-scroll {
-  font-size: 4em;
+  font-size: 0.75em;
 }
 
 .navbar-on-scroll-main {
