@@ -20,13 +20,9 @@ const ProjectItem = (props) => {
         target="_blank"
         rel="noopener noreferrer"
         className="project-item"
-        style={{
-          background: `url(${props.img}) center/cover`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></motion.a>
+      >
+        <img src={props.img} alt={props.title} />
+      </motion.a>
       <article className="details">
         <h4>{props.title}</h4>
         <p>{props.description}</p>

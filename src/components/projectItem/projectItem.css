@@ -1,13 +1,16 @@
 .project-item {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 1rem;
   background-color: var(--filler-color);
   border: 11px solid var(--filler-color);
+  height: auto;
 }
 
-.project-item a {
-  min-height: 16rem;
+.project-item a img {
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
 }
 
 .project-item article {
@@ -44,11 +47,8 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1050px) {
   .project-item {
-    grid-template-columns: none;
-    grid-template-rows: repeat(2, 30vh);
-    gap: 0;
-    padding-bottom: 4.5rem;
+    flex-direction: column;
   }
 }

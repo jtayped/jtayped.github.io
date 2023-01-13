@@ -8,7 +8,7 @@ const Projects = () => {
   const projectItems = [
     {
       id: 1,
-      title: "Pomodoro",
+      title: "Pomodoro Timer",
       description:
         "This is a Pomodoro timer tool that includes a task manager and integrated study music, all built in React. Keep on track and motivated with our clean and user-friendly design.",
       img: Pomodoro,
