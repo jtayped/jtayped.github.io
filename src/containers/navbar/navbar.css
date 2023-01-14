@@ -82,9 +82,6 @@
 }
 
 @media all and (max-width: 650px) {
-  .logo {
-    font-size: 4rem;
-  }
   .navbar-right ul li {
     display: none;
   }
