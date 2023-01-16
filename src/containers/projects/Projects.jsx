@@ -1,6 +1,6 @@
 import "./projects.css";
 
-import { Pomodoro } from "../../assets/projects/index";
+import { Pomodoro, Medit8 } from "../../assets/projects/index";
 
 import { ProjectItem } from "../../components/index";
 
@@ -13,6 +13,14 @@ const Projects = () => {
         "This is a Pomodoro timer tool that includes a task manager and integrated study music, all built in React. Keep on track and motivated with our clean and user-friendly design.",
       img: Pomodoro,
       link: "https://jtayped.github.io/pomodoro-timer/",
+    },
+    {
+      id: 2,
+      title: "Medit8",
+      description:
+        "Unlock your full potential with our meditation app. Find peace, clarity and inner strength to improve every aspect of your life. Experience the benefits of mindfulness and develop a powerful mindset to achieve your goals.",
+      img: Medit8,
+      link: "https://jtayped.github.io/meditation-app/",
     },
   ];
 
