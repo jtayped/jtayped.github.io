@@ -20,7 +20,7 @@ const Projects = () => {
       description:
         "Unlock your full potential with our meditation app. Find peace, clarity and inner strength to improve every aspect of your life. Experience the benefits of mindfulness and develop a powerful mindset to achieve your goals.",
       img: Medit8,
-      link: "https://jtayped.github.io/meditation-app/",
+      link: "https://jtayped.github.io/medit8/",
     },
   ];
 
