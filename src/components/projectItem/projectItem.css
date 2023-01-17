@@ -1,6 +1,7 @@
 .project-item {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1rem;
   background-color: var(--filler-color);
   border: 11px solid var(--filler-color);
