@@ -1,6 +1,6 @@
 import "./projects.css";
 
-import { Pomodoro, Medit8 } from "../../assets/projects/index";
+import { Pomodoro, Medit8, AppleClone } from "../../assets/projects/index";
 
 import { ProjectItem } from "../../components/index";
 
@@ -16,6 +16,14 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "Apple Clone",
+      description:
+        "The website I cloned is a replica of the Apple website, showcasing my skills in modern web design. It features a clean and minimalistic layout with large high-quality images and a responsive design",
+      img: AppleClone,
+      link: "https://jtayped.github.io/Apple-Clone/",
+    },
+    {
+      id: 3,
       title: "Medit8",
       description:
         "Unlock your full potential with our meditation app. Find peace, clarity and inner strength to improve every aspect of your life. Experience the benefits of mindfulness and develop a powerful mindset to achieve your goals.",
